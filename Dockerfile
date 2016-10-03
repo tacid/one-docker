@@ -1,10 +1,10 @@
-FROM debian:jessie
-MAINTAINER Pavel Vondruska <dextor@centrum.cz>
+FROM ubuntu:xenial
+MAINTAINER Pavel Vondruska <dextor@centrum.cz>, Tacid <tacid@tacid.kiev.ua>
 
-ENV VERSION 5.0.0
-ENV DEB_VERSION 5.0.0-1
+ENV VERSION 5.0.2
+ENV DEB_VERSION 5.0.2-2
 
-ENV ONE_URL http://downloads.opennebula.org/packages/opennebula-$VERSION/debian8/opennebula-$DEB_VERSION.tar.gz
+ENV ONE_URL http://downloads.opennebula.org/packages/opennebula-$VERSION/ubuntu-1604/opennebula-$DEB_VERSION.tar.gz
 
 RUN buildDeps=' \
 		ca-certificates \
